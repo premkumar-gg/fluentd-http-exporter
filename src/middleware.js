@@ -4,7 +4,7 @@ var http = require('http');
 var observeMetricsFileContent = require('./metrics');
 const port = process.env.METRICS_PORT || 3000;
 
-var watchPath = process.env.METRICS_WATCH_PATH || '/var/lib/td-agent/http-exporter/buffer';
+var watchPath = process.env.METRICS_WATCH_PATH || '/var/lib/td-agent/fluentd-http-exporter/buffer';
 
 var promCli = require('prom-client');
 
