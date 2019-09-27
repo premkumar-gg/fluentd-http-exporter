@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  build:
+    working_directory: /var/app/service-healthcheck
+    docker:
+      - image: keymetrics/pm2
+    steps:
+      - checkout
+      - run:
+          name: Install project dependencies
+          command: npm i
+      - run:
+          name: Run Unit tests
+          command: npm run test
