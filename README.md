@@ -56,6 +56,8 @@ the Apache server, but only the Prometheus server.
 over-rich amount of metrics, which may not be necessary ideally. To reduce stress
 on the Prometheus server, it will be great to only **count** all the paths, and
 measure **latency** only on whitelisted paths.
+2. Make the middleware observe an S3 bucket where fluentd publishes the buffer files,
+so the solution can be dockerized and kept away from the host machine.
 
 
 Contributions welcome!
