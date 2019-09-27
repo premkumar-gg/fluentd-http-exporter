@@ -1,5 +1,7 @@
 # Http log Prometheus exporter
 
+[![CircleCI](https://circleci.com/gh/premkumar-gg/fluentd-http-exporter.svg?style=svg)](https://circleci.com/gh/premkumar-gg/fluentd-http-exporter)
+
 ## Problem addressed
 
 Apache mod_status based Prometheus exporter does not provide the stats about the 
